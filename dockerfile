@@ -2,7 +2,7 @@ FROM public.ecr.aws/y8l1o1z1/ros2-jazzy:latest
 
 USER root
 
-# Install library for Orbbec sdk 
+# Install library for ROS Bridge
 RUN apt-get update
 RUN apt-get install ros-${ROS2_DISTRO}-rosbridge-suite -y
 
